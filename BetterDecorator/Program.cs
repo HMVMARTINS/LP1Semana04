@@ -2,8 +2,15 @@
 
 namespace BetterDecorator
 {
+    /// <summary>
+    /// Um programa que decora uma string
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Programa principal
+        /// </summary>
+        /// <param name="args">Os argumentos da linha de comandos.</param>
         static void Main(string[] args)
         {
 
@@ -23,6 +30,13 @@ namespace BetterDecorator
             Console.WriteLine(Decor(s, dec, repeatCount));
         }
 
+        /// <summary>
+        /// Decora uma string
+        /// </summary>
+        /// <param name="s">A string é decorada.</param>
+        /// <param name="dec">É usado um caracter.</param>
+        /// <param name="repeatCount">Número de repetições.</param>
+        /// <returns>String decorada.</returns>
         private static string Decor(string s, char dec, int repeatCount)
         {
             // Constrói o decorador
